@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RUANG-TAMU</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com",
+                "three/addons/": "https://unpkg.com"
+            }
+        }
+    </script>
     
   </head>
   <body>
@@ -57,9 +65,23 @@
 
     <!-- transformasi benda benda  -->
      <div class="control-group">
-      <div class=""></div>
+      <div class="control-label">
+        <label for="object-select">pilih benda / klick dropdown</label>
+      </div>
+      <select id="object-select">
+        <option value="sofa">1. Sofa</option>
+        <option value="meja">2. Meja</option>
+        <option value="lampu">3. Lampu</option>
+        <option value="tv">4. Tv</option>
+        <option value="tanaman">5. Tanaman</option>
+      </select>
      </div>
 
+     
+     
+    
+
+      
     <script src="script.js"></script>
   </body>
 </html>
